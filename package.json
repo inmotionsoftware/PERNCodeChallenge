@@ -1,0 +1,60 @@
+{
+  "name": "PernDemo",
+  "version": "1.0.0",
+  "description": "InMotion PERN Template",
+  "main": "src/index.js",
+  "author": "",
+  "private": true,
+  "scripts": {
+    "lint": "eslint src",
+    "webpack": "webpack -w --mode=development",
+    "launch": "yarn eslint && yarn build && yarn start"
+  },
+  "browserslist": [
+    "last 1 chrome version",
+    "last 1 safari version"
+  ],
+  "dependencies": {
+    "@babel/eslint-parser": "^7.13.10",
+    "@babel/plugin-proposal-optional-chaining": "^7.12.1",
+    "@babel/plugin-syntax-optional-chaining": "^7.8.3",
+    "@babel/preset-env": "^7.12.1",
+    "@cloudnative/health": "^2.1.2",
+    "@cloudnative/health-connect": "^2.1.0",
+    "ajv": "^6.12.6",
+    "bcrypt": "^5.0.0",
+    "busboy": "^0.3.1",
+    "classnames": "^2.2.6",
+    "cookie": "^0.4.1",
+    "cookie-parser": "^1.4.5",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.6.0",
+    "prom-client": "^12.0.0",
+    "prop-types": "^15.7.2",
+    "pug": "^3.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-markdown": "^6.0.2",
+    "socket.io": "^2.3.0",
+    "stripe": "^8.140.0",
+    "use-debounce": "^3.4.2",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.13",
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/preset-react": "^7.10.1",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "babel-polyfill": "^6.26.0",
+    "eslint": "^7.1.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.4",
+    "webpack": "^5.28.0",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
