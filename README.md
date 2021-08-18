@@ -1,7 +1,10 @@
-Here is a list of endpoints that should be supported to make the front end work.
+Here is a list of endpoints that should be supported to make the front end work.  Please implement at least 3 of them.  (if you choose not to implement login/logout, please at least stub them out or the UI will not work)
+
+Please implement a SQL database of some kind to store the data.
+
 
 - POST /user/login
-- logs the user in (users can just be hardcoded in the database or mocked)
+- logs the user in 
 - body: {
     "username":"test@example.org",
     "password":"password",
@@ -18,9 +21,10 @@ Here is a list of endpoints that should be supported to make the front end work.
 
 - GET /user/logout
 - logs the current user out
+- response schema: "Created"
 
 - GET /movies
-- returns a list of all movies (would be helpful to seed the database with some movies)
+- returns a list of all movies (would be helpful to seed the database with some movies, the UI for adding movies isn't functional)
 - response schema:
   [
     {
@@ -48,9 +52,9 @@ Here is a list of endpoints that should be supported to make the front end work.
   }
 - inserts a new movie to the movie collection
 
-- GET '/movies/:movie_id/cast'
+- GET '/movies/:movie_id'
 - param: movie_id
-- updates the rating for a particular movie id
+- gets details about a particular movie
 - response schema:
   {
   	movie_id": "1",
@@ -103,9 +107,5 @@ Here is a list of endpoints that should be supported to make the front end work.
     "died": null,
     "description": "An actor and producer known as much for his versatility as he is for his handsome face"
   }
-
-- DELETE '/people/:person_id'
-- param: person_id
-- deletes this person from the database
 
 
