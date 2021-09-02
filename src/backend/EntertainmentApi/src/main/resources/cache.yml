@@ -1,0 +1,2 @@
+singleServerConfig:
+  address: "redis://entertainment-cache:6379"

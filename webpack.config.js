@@ -9,9 +9,6 @@ module.exports = {
     filename: 'bundle.js'
   },
   devtool: 'source-map',
-  devServer: {
-    contentBase: './dist',
-  },
   module: {
     rules: [{
       test: /\.(js|jsx)$/,
@@ -30,18 +27,25 @@ module.exports = {
       options: {
         limit: 100000
       }
-    }
-    ]
+    },
+    {
+      test: /\.html$/,
+      use: 'html-loader'
+    }]
   },
   resolve: {
     extensions: ['*', '.js', '.jsx']
   },
   devServer: {
+    host: '0.0.0.0',
+    contentBase: './dist',
+    publicPath: "./src/frontend",
     port: 3000,
     open: true,
     historyApiFallback: true,
+    disableHostCheck: true,
     proxy: {
       '/api': 'http://localhost:8080'
-    }
+    },
   }
 };

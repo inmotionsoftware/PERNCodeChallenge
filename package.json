@@ -2,12 +2,14 @@
   "name": "PernDemo",
   "version": "1.0.0",
   "description": "InMotion PERN Template",
-  "main": "src/index.js",
+  "main": "./dist/bundle.js",
   "author": "",
   "private": true,
   "scripts": {
     "lint": "eslint src",
     "webpack": "webpack -w --mode=development",
+    "build": "webpack --mode=development",
+    "start": "webpack serve --mode development",
     "launch": "yarn eslint && yarn build && yarn start"
   },
   "browserslist": [
@@ -47,12 +49,15 @@
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.2",
     "babel-polyfill": "^6.26.0",
+    "css-loader": "^6.2.0",
     "eslint": "^7.1.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^4.0.4",
+    "html-loader": "^2.1.2",
+    "style-loader": "^3.2.1",
     "webpack": "^5.28.0",
     "webpack-cli": "^4.6.0",
     "webpack-dev-server": "^3.11.0"
