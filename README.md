@@ -1,3 +1,11 @@
+## Running Demo Stack
+
+- Make sure you have docker installed.
+- Run `docker compose -p demo -f ./docker/docker-compose.yml up -d` from repository root
+- Wait for about 10 seconds after every container is started
+- Go to http://localhost:8080
+
+
 Here is a list of endpoints that should be supported to make the front end work.  Please implement at least 3 of them.  (if you choose not to implement login/logout, please at least stub them out or the UI will not work)
 
 Please implement a SQL database of some kind to store the data.
