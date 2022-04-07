@@ -1,3 +1,8 @@
+NOTE: When you are done, you should have a fully running website with a React front end and working backend.  You will be providing the backend and whatever configuration and/or environment changes are necessary to make that happen.
+
+
+
+
 Here is a list of endpoints that should be supported to make the front end work.  Please implement at least 3 of them.  (if you choose not to implement login/logout, please at least stub them out or the UI will not work)
 
 Please implement a SQL database of some kind to store the data.
